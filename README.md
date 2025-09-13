@@ -1,5 +1,6 @@
 # mcp-ai-agent-automation-testing
 - AI automation testing
+- Github copilot with model
 - Robot Framework
 - Playwright
 - Requirement
