@@ -1,0 +1,38 @@
+Feature: Create Account
+1. Overview:
+
+Allows users to create a new account by filling in their personal information and submitting the registration form.
+
+2. User Flow:
+
+The user clicks the "Create Account" button.
+
+The system displays the account creation form, which includes the following fields:
+
+Title:
+
+Mr.
+
+Mrs.
+
+First Name* (required)
+
+Last Name* (required)
+
+Email* (required, must be a valid email format)
+
+Example: asda@gmail.com
+
+Password* (required, minimum 5 characters)
+
+Date of Birth:
+
+Day
+
+Month
+
+Year
+
+Sign up for our newsletter (optional checkbox)
+
+The user fills in the form and submits it to create the account.

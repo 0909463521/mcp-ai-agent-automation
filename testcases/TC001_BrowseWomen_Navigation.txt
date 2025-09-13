@@ -1,0 +1,51 @@
+Test Case ID: TC001_BrowseWomen_Navigation
+Feature: Browse Women Category
+Type: Happy Path
+Description: Verify basic navigation and display of Women's category products
+
+Pre-conditions:
+1. User is on the website's homepage
+2. Products exist in the Women category
+
+Test Steps:
+1. Click on the "Women" menu/tab
+2. Verify the following elements are displayed:
+   - Product cards with images
+   - Product names
+   - Prices
+   - Availability status
+3. Verify filter options are present on the left side:
+   - Categories
+   - Size
+   - Color
+   - Properties
+   - Compositions
+   - Styles
+   - Availability
+   - Condition
+   - Price
+4. Click on any product card
+5. Verify product detail page displays:
+   - Product Name
+   - Product Image(s)
+   - Price information
+   - Availability
+   - Product Description
+   - Available Sizes
+   - Colors
+   - Quantities
+   - "Add to Cart" button
+   - Product composition
+   - Style
+   - Category
+
+Expected Results:
+1. Women's category page loads successfully
+2. All products are displayed in a grid/card view
+3. All filter options are clickable
+4. Product detail page shows complete information
+5. Navigation between pages is smooth
+
+Post-conditions:
+1. User can navigate back to category page
+2. Filter selections (if any) are maintained

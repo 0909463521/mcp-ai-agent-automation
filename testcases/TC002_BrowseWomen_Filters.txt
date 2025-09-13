@@ -1,0 +1,55 @@
+Test Case ID: TC002_BrowseWomen_Filters
+Feature: Browse Women Category
+Type: Functional
+Description: Verify filter functionality in Women's category
+
+Pre-conditions:
+1. User is on the Women's category page
+2. Multiple products with different attributes exist
+
+Test Steps:
+1. Test Size Filter:
+   - Click Size filter
+   - Select "S" size
+   - Verify filtered products
+   - Add "M" size to selection
+   - Verify updated results
+   - Clear size filter
+
+2. Test Price Filter:
+   - Adjust price range slider
+   - Verify products within range
+   - Set minimum price
+   - Set maximum price
+   - Verify filtered results
+
+3. Test Color Filter:
+   - Select specific color (e.g., "Black")
+   - Verify filtered products
+   - Add second color (e.g., "White")
+   - Verify combined results
+   - Clear color filter
+
+4. Test Multiple Filters:
+   - Select Size "M"
+   - Select Color "Black"
+   - Set price range
+   - Verify combined filter results
+   - Clear all filters
+
+Expected Results:
+1. Each filter when applied should:
+   - Update product list immediately
+   - Show only matching products
+   - Display correct count of filtered items
+2. Multiple filters should:
+   - Work in combination
+   - Show products matching ALL selected criteria
+3. Clearing filters should:
+   - Remove all filter selections
+   - Show all products again
+4. Filter options should reflect available products
+
+Post-conditions:
+1. All filters can be cleared
+2. Original product list can be restored

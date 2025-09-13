@@ -1,0 +1,32 @@
+Test Case ID: TC001_CreateAccount_HappyPath
+Feature: Create Account
+Type: Happy Path
+Description: Verify that a user can successfully create an account with valid information
+
+Pre-conditions:
+1. User is on the website's homepage
+2. User is not logged in
+
+Test Steps:
+1. Click on "Create Account" button
+2. Select Title as "Mr."
+3. Enter First Name: "John"
+4. Enter Last Name: "Smith"
+5. Enter Email: "john.smith@example.com"
+6. Enter Password: "Test123"
+7. Select Date of Birth:
+   - Day: 15
+   - Month: March
+   - Year: 1990
+8. Check the "Sign up for newsletter" checkbox
+9. Click Submit button
+
+Expected Results:
+1. Account is created successfully
+2. User receives a confirmation message
+3. User is automatically logged in
+4. User is redirected to their account dashboard
+
+Post-conditions:
+1. New account exists in the system
+2. User can log in with the created credentials

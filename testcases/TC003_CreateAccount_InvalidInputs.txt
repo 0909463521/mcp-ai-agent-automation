@@ -1,0 +1,54 @@
+Test Case ID: TC003_CreateAccount_InvalidInputs
+Feature: Create Account
+Type: Edge Cases
+Description: Verify system handling of invalid or boundary value inputs during account creation
+
+Pre-conditions:
+1. User is on the website's homepage
+2. User is not logged in
+
+Test Steps:
+1. Click on "Create Account" button
+2. Test the following scenarios:
+
+Scenario A - Special Characters:
+1. Enter First Name: "John#$%"
+2. Enter Last Name: "Smith@#!"
+3. Click Submit
+4. Note error messages
+
+Scenario B - Very Long Inputs:
+1. Enter First Name with 100 characters
+2. Enter Last Name with 100 characters
+3. Enter Email with 100 characters before @ symbol
+4. Click Submit
+5. Note error messages
+
+Scenario C - Password Variations:
+1. Enter Password: "a" (too short)
+2. Click Submit and note error
+3. Enter Password: "     " (only spaces)
+4. Click Submit and note error
+5. Enter Password with 100 characters
+6. Click Submit and note error
+
+Scenario D - Invalid Date of Birth:
+1. Select future date
+2. Click Submit
+3. Note error message
+
+Expected Results:
+1. System should reject or sanitize special characters in name fields
+2. System should handle or truncate very long inputs appropriately
+3. Password validation should:
+   - Reject passwords shorter than 5 characters
+   - Reject passwords with only spaces
+   - Handle very long passwords appropriately
+4. Future dates should not be accepted for Date of Birth
+5. Appropriate error messages should be displayed for each invalid input
+6. System should maintain valid entries when showing errors
+
+Post-conditions:
+1. Account should not be created
+2. User remains on the registration page with error messages
+3. Valid data should be preserved in form fields

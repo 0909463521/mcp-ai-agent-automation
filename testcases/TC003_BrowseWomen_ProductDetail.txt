@@ -1,0 +1,62 @@
+Test Case ID: TC003_BrowseWomen_ProductDetail
+Feature: Browse Women Category
+Type: Functional
+Description: Verify product detail page functionality and interactions
+
+Pre-conditions:
+1. User is on the Women's category page
+2. At least one product is available
+
+Test Steps:
+1. Select a product with available stock:
+   - Click on product card
+   - Verify redirect to product detail page
+   - Verify URL contains product ID
+
+2. Test Size Selection:
+   - Click different size options
+   - Verify size selection is highlighted
+   - Verify stock status updates if applicable
+   - Try selecting out-of-stock size if available
+
+3. Test Color Selection:
+   - Click different color options
+   - Verify color selection is highlighted
+   - Verify product image updates if applicable
+   - Verify price updates if applicable
+
+4. Test Quantity Selection:
+   - Click quantity increase button
+   - Click quantity decrease button
+   - Enter quantity manually
+   - Try entering zero quantity
+   - Try entering quantity > available stock
+   - Try entering negative quantity
+
+5. Test Product Images:
+   - Click thumbnail images
+   - Verify main image updates
+   - Test image zoom if available
+   - Verify all product views are accessible
+
+Expected Results:
+1. Product detail page should:
+   - Load all product information correctly
+   - Show accurate stock status
+   - Display all available options
+2. Size selection should:
+   - Update availability
+   - Show out-of-stock sizes differently
+3. Quantity selection should:
+   - Not allow zero or negative values
+   - Not exceed available stock
+   - Show error for invalid inputs
+4. Images should:
+   - Load correctly
+   - Update when color changes
+   - Show zoom view if available
+
+Post-conditions:
+1. Selected options remain until changed
+2. Stock status accurately reflects selections
+3. Price updates based on selections if applicable

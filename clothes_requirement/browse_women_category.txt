@@ -1,0 +1,55 @@
+Feature: Browse "Women" Category and View Product Detail
+1. Overview
+
+Users can browse all available women's fashion items by clicking the "Women" tab. After selecting a specific item, the system displays a detailed product page with all relevant information.
+
+2. User Flow
+Step 1: Access Women Category
+
+Trigger: User clicks on the "Women" menu/tab.
+
+System Response:
+
+Display all products under the Women category.
+
+Show filters on the left side: Categories, Size, Color, Properties, Compositions, Styles, Availability, Condition, Price.
+
+Each product is displayed in a card view with:
+
+Product name
+
+Product image
+
+Price (with discount info if any)
+
+Availability status (e.g., "Out of stock", "Available with different options")
+
+Action: Clickable to view detail
+
+Step 2: View Product Detail
+
+Trigger: User clicks on any product card.
+
+System Response:
+
+Navigate to the product detail page.
+
+Display the following:
+
+Product Name
+
+Product Image(s)
+
+Price (original and discounted)
+
+Availability
+
+Product Description
+
+Available Sizes, Colors, Quantities
+
+"Add to Cart" button (if in stock)
+
+Product composition, style, category
+
+Related products or recommendations (optional)

@@ -1,0 +1,131 @@
+TICCA DASHBOARD TEST CASES
+=======================
+
+Test Case ID: TC_001
+Title: User Login Authentication
+Description: Verify that users can successfully log into the dashboard
+Pre-conditions: 
+- User has valid credentials
+- Website is accessible at https://preview.ticca.team/dashboard/v0/0.0.0.3/
+Test Steps:
+1. Navigate to the dashboard login page
+2. Enter valid username
+3. Enter valid password
+4. Click on the login button
+Expected Results:
+- User should be successfully logged in
+- Dashboard home page should be displayed
+- User profile information should be visible
+
+Test Case ID: TC_002
+Title: Dashboard Navigation
+Description: Verify navigation through different dashboard sections
+Pre-conditions:
+- User is logged into the dashboard
+Test Steps:
+1. Click on each main navigation menu item
+2. Verify sub-menu items if present
+3. Navigate through different sections
+4. Click on breadcrumb links
+Expected Results:
+- All navigation menu items should be clickable
+- Correct content should load for each section
+- Breadcrumb navigation should work as expected
+- Active menu item should be highlighted
+
+Test Case ID: TC_003
+Title: Dashboard Data Display
+Description: Verify data display and updates on dashboard panels
+Pre-conditions:
+- User is logged in
+- Dashboard has data to display
+Test Steps:
+1. Check all data panels on the main dashboard
+2. Verify data refresh functionality
+3. Check data visualization elements (charts, graphs)
+4. Verify data sorting and filtering options
+Expected Results:
+- All data panels should display correct information
+- Data should refresh when requested
+- Charts and graphs should render correctly
+- Sorting and filtering should work as expected
+
+Test Case ID: TC_004
+Title: Form Interaction and Data Entry
+Description: Verify form interactions and data entry functionality
+Pre-conditions:
+- User is logged in
+- Has necessary permissions
+Test Steps:
+1. Locate and open a data entry form
+2. Enter data in all required fields
+3. Test form validation
+4. Submit the form
+5. Edit existing data
+Expected Results:
+- Form should accept valid inputs
+- Show validation errors for invalid inputs
+- Successfully save new data
+- Allow editing of existing data
+
+Test Case ID: TC_005
+Title: Error Handling
+Description: Verify error handling and validation messages
+Pre-conditions:
+- User is logged in
+Test Steps:
+1. Submit a form with missing required fields
+2. Enter invalid data formats
+3. Test session timeout scenario
+4. Test with network connectivity issues
+Expected Results:
+- Clear error messages should be displayed
+- Required field validations should work
+- Session timeout should be handled gracefully
+- Network errors should be communicated clearly
+
+Test Case ID: TC_006
+Title: Filter and Search Functionality
+Description: Verify filter and search features across dashboard
+Pre-conditions:
+- User is logged in
+- Data exists in the system
+Test Steps:
+1. Test global search functionality
+2. Apply various filters
+3. Combine multiple filters
+4. Clear/reset filters
+Expected Results:
+- Search should return relevant results
+- Filters should narrow down data correctly
+- Multiple filters should work in combination
+- Reset should clear all applied filters
+
+Test Case ID: TC_007
+Title: Create New Project
+Description: Verify the project creation functionality
+Pre-conditions:
+- User is logged in
+- User has permissions to create projects
+Test Steps:
+1. Navigate to Project Management section
+2. Click on "Create New Project" button
+3. Fill in project details:
+   - Project Name
+   - Project Description
+   - Start Date
+   - End Date
+   - Project Manager
+   - Team Members
+   - Project Type
+4. Upload any required documents
+5. Set project priority
+6. Configure project settings
+7. Click "Save" or "Create Project" button
+Expected Results:
+- Project should be created successfully
+- System should display success message
+- New project should appear in project list
+- Project details should be saved correctly
+- Team members should receive notifications
+- Project should be accessible with correct permissions

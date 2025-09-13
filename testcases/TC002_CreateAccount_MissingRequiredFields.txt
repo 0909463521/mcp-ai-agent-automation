@@ -1,0 +1,40 @@
+Test Case ID: TC002_CreateAccount_MissingRequiredFields
+Feature: Create Account
+Type: Negative
+Description: Verify that the system properly handles missing required fields during account creation
+
+Pre-conditions:
+1. User is on the website's homepage
+2. User is not logged in
+
+Test Steps:
+1. Click on "Create Account" button
+2. Leave First Name empty
+3. Leave Last Name empty
+4. Leave Email empty
+5. Leave Password empty
+6. Click Submit button
+7. Note the error messages
+8. Enter First Name: "John"
+9. Click Submit button
+10. Note the error messages
+11. Enter Last Name: "Smith"
+12. Click Submit button
+13. Note the error messages
+14. Enter invalid email: "invalid.email"
+15. Click Submit button
+16. Note the error messages
+
+Expected Results:
+1. Form should not submit with missing required fields
+2. Error messages should be displayed for each missing required field:
+   - "First Name is required"
+   - "Last Name is required"
+   - "Email is required"
+   - "Password is required"
+3. Invalid email format should show message: "Please enter a valid email address"
+4. System should maintain entered values after failed submission
+
+Post-conditions:
+1. Account should not be created
+2. User remains on the registration page

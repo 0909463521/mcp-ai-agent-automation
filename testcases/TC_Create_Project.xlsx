@@ -1,0 +1,64 @@
+Test Case ID	Description	Pre-conditions	Test Steps	Test Data	Expected Results
+TC_CP_001	Verify creating new project with all mandatory fields	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Enter Project Name
+3. Enter Description
+4. Select Project Priority
+5. Enter Start Date
+6. Click Save	Project Name: "Test Project #1"
+Description: "Test automation project"
+Priority: "High"
+Start Date: "09/05/2025"	1. Project should be created successfully
+2. Success message should be displayed
+3. Project should appear in project list
+TC_CP_002	Verify validation for mandatory fields	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Leave Project Name empty
+3. Click Save	Project Name: ""
+Description: "Test project"	1. Error message should be displayed
+2. Project should not be created
+3. "Project Name is required" message should be shown
+TC_CP_003	Verify date validations	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Enter Project Name
+3. Enter Description
+4. Set End Date earlier than Start Date
+5. Click Save	Project Name: "Test Project #2"
+Description: "Test project"
+Start Date: "09/05/2025"
+End Date: "09/04/2025"	1. Error message should be displayed
+2. "End date cannot be earlier than start date" message should be shown
+TC_CP_004	Verify creating project with all optional fields	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Fill all mandatory fields
+3. Enter Received Date
+4. Enter Due Date
+5. Enter End Date
+6. Click Add More Details
+7. Fill additional details
+8. Click Save	Project Name: "Complete Project"
+Description: "Full project details"
+Priority: "Medium"
+Received Date: "09/01/2025"
+Start Date: "09/05/2025"
+Due Date: "09/20/2025"
+End Date: "09/30/2025"	1. Project should be created with all details
+2. All dates should be saved correctly
+3. Additional details should be saved
+TC_CP_005	Verify date format validation	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Enter Project Name
+3. Enter invalid date format
+4. Click Save	Project Name: "Date Test Project"
+Start Date: "2025-09-05" (wrong format)	1. Error message should be displayed
+2. "Please enter date in mm/dd/yyyy format" message should be shown
+TC_CP_006	Verify project priority selection	1. User is logged in
+2. User has permission to create project	1. Navigate to Create New Project page
+2. Click on Priority dropdown
+3. Select each priority option
+4. Complete other mandatory fields
+5. Click Save	Project Name: "Priority Test"
+Description: "Testing priority"
+Priority: Test each ("High", "Medium", "Low")	1. All priority options should be selectable
+2. Selected priority should be saved correctly
+3. Project should be created with selected priority
