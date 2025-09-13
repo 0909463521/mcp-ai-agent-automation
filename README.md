@@ -1,2 +1,2 @@
-# mcp-ai-agent-automation
-- AI automation 
+# mcp-ai-agent-automation-testing
+- AI automation testing
